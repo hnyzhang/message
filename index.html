@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我想对你说</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-image:url('images/light_night2.jpg');
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-color:#222;
+		position: relative;
+		width:100%;
+	}
+	#code{
+		width:60%;
+		min-width:800px;
+		height:600px;
+		background-color:rgba(0, 0, 0, 0.6);
+		position:fixed;
+		left:15%;
+		top:10%;
+		border-radius: 10px;
+		font-size:16px;
+		line-height:25px;
+		font-weitht:bold;
+	}
+	#author{
+		position: fixed;
+		bottom: 10px;
+		left: 48%;
+	}
+	#author a{
+		text-decoration: none;}
+	.key{
+		color:orange;
+		/*color: red;*/
+		font-family:'';
+		font-size: 20px;
+		margin: 20px,20px;
+	}
+	.comment{
+		/*color:#e6e6e6;*/
+		color: red;
+		font-family:'';
+		/*font-weight: 80;*/
+		font-size: 20px;
+	}
+	</style>
+</head>
+<body>
+	<!-- 代码部分begin -->
+	 <div id="code">
+	 <pre style="padding: 10px 0;">
+	 <!-- <img src="images/photo.jpeg" style="opacity: 0.8"> -->
+ 	<code>
+		<span class="key">你说，你讨厌自己，觉得自己好多方面不如别人，</span>
+		<span class="comment">你还说，觉得我不会办事，不会说话，是个直男；</span>
+		<span class="key">你说，你没有真正陪你浪的朋友，融入不了集体，</span>
+		<span class="comment">你还说，我不会安慰人，我不是你要找的那个他；</span>
+		<span class="key">我说，你已经很优秀了，在我心里，你那么的好，</span>
+		<span class="comment">我又说，我这人情商不高，可是我对你是真心的；</span>
+		<span class="key">我说，人生本来就是孤独的，没有必要刻意迎合，</span>
+		<span class="comment">我又说，你走，我不送你，你来，我永远去接你；</span>
+		<span class="key">你有时候还说，你这人就这样，自私、性子直，受不了尽可以离开</span>
+		<span class="comment">你有时候还说，我说的话让人难受，我就是贱</span>
+		<span class="key">可是，你知道吗，如果不是喜欢你那么深，我何必多言，何必"犯贱"</span>
+		<span class="comment">有人说，喜欢一个人，当你们的喜欢程度不对等的话，就是期待能从尘埃里开出花</span>
+	   	<span class="key">两个人最终能够走到一起，需要经历太多的考验，但要分开却很容易</span>
+	 	<span class="comment">我不相信什么命中注定，如果说我们能最终白头到老是一种奇迹的话，我相信这个奇迹</span>
+	   	<span class="key">我很认同花彪的那句话"你知道什么人能创造奇迹吗？就是相信奇迹的人"</span>
+	   	<span class="comment">虽然，有的时候你的说话语气，让我觉得有点咄咄逼人，没有那么温柔</span>
+		<span class="key">但是，我就是找不到离开你的理由，我怕我一松手就要永远失去你</span>
+		<span class="comment">圣诞节，我本该说些祝福的话，让你开心的话，送你礼物什么的</span>
+		<span class="comment" style="font-size: 22px;">可我还是不太会讨你欢心，只是希望你能在没有我在你身边的日子里照顾好自己</span>
+ 	</code>
+	 </pre>
+	 </div>
+	<script src="js/ThreeCanvas.js"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/Snow.js"></script>
+	<script src="js/snowFall.js"></script>
+	<script>
+		$.snowFall({
+			//创建粒子数量，密度
+			particleNo: 500,
+			//粒子下拉速度
+			particleSpeed:30,
+			//粒子在垂直（Y轴）方向运动范围
+			particleY_Range:1300,
+			//粒子在垂直（X轴）方向运动范围
+			particleX_Range:1000,
+			//是否绑定鼠标事件
+		    bindMouse: false,
+		    //相机离Z轴原点距离
+		    zIndex:600,
+		  //摄像机视野角度
+		    angle:55,
+		    wind_weight:0
+			});
+	</script>
+	<canvas>
+	</canvas>
+	<!-- 代码部分end -->
+</body>
+</html>
